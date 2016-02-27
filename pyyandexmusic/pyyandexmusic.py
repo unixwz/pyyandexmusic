@@ -7,7 +7,7 @@
 1) Search(keyword, search_type, offset)
     Поиск по ключевому слову с заданным типом и смещением страниц.
     - keyword - ключевое слово
-    - search_type - тип поиска
+    - search_type - тип контента
         - tracks - треки
         - albums - альбомы
         - artists - исполнитель
@@ -15,11 +15,6 @@
         к примеру offset=1 вернёт результаты расположенные на 1 странице,
         offset=2 вернёт результаты расположенные на 2 странице,
         при этом следует учитывать, что нумерация начинается с нуля.
-        Для того, что бы определить присутствует ли разбиение на страницы -
-        достаточно проверить общее кол-во результатов полученных в результате
-        вызова метода search (кол-во хранится в перменной YandexMusic.page_count).
-        Если YandexMusic.page_count > 100, то разбиение на страницы присутвует.
-
 
 TODO:
 - получение прямой ссылки на аудио
@@ -27,6 +22,7 @@ TODO:
 
 import httplib2
 import json
+import math
 
 
 class YandexMusic(object):
@@ -49,19 +45,28 @@ class YandexMusic(object):
     def search(self, keyword, search_type="tracks", offset=0):
         keyword = keyword.replace(" ", "+")
         # заменяем пробел "+", для HTTP запроса
-
         (resp, content) = self.http.request(
             self.base_url + "music-search.jsx?text=" + keyword + "&type=" + search_type + "&page=" + str(offset) + "",
             headers=self.headers)
 
         return json.loads(content)
 
+    def get_page_count(self, keyword, search_type="tracks"):
+        keyword = keyword.replace(" ", "+")
+        # заменяем пробел "+", для HTTP запроса
+        (resp, content) = self.http.request(
+            self.base_url + "music-search.jsx?text=" + keyword + "&type=" + search_type + "", headers=self.headers)
+        content = json.loads(content)
+        page_count = int(math.ceil(float(content["pager"]["total"]) / 100))
+        # определяем кол-во страниц на которые разбит найденный контент
+        return page_count
+
     def get_track(self, track_id):
         (resp, content) = self.http.request(self.base_url + "track.jsx?track=" + str(track_id) + "&lang=ru",
                                             headers=self.headers)
         return json.loads(content)
 
-    def get_author(self, artist_id):
+    def get_artist(self, artist_id):
         (resp, content) = self.http.request(self.base_url + "artist.jsx?artist=" + str(artist_id) + "&lang=ru",
                                             headers=self.headers)
         return json.loads(content)
@@ -69,7 +74,7 @@ class YandexMusic(object):
     def get_album(self):
         pass
 
-    def get_link(self):
+    def get_download_link(self):
         pass
 
     def get_lyrics(self):
