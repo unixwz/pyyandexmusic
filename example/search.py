@@ -2,7 +2,7 @@
 import pyyandexmusic
 ym = pyyandexmusic.YandexMusic()
 
-track_resp = ym.search("Mozart")
+track_resp = ym.search("Amon Amarth")
 # найдем треки по ключевому слову Mozart.
 # Обратите внимание на то, что в случае
 # поисков треков параметр search_type можно не указывать
