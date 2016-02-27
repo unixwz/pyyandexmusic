@@ -11,4 +11,6 @@ i = 0
 
 for track in resp["tracks"]["items"]:
     i += 1
-    print str(i) + ") " + track["artists"][0]["name"] + " - " + track["title"] + " / id = " + str(track["id"])
+    info = ym.get_track(track["id"])["track"]
+    print(str(i) + ") " + track["artists"][0]["name"] + " - " + track["title"] + " / id = " + str(track["id"]) +
+          " / " + info["albums"][0]["title"])
