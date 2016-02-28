@@ -93,15 +93,15 @@ class YandexMusic(object):
         storage_info = self.__get_storage_info__(track_id)
         # получим информацию о хранение трека на сервере
         h = hashlib.md5()
-        h.update(self.key + storage_info["path"] + storage_info["s"])
+        h.update(self.key + storage_info["path"][1:100] + storage_info["s"])
         hash = h.hexdigest()
         # получим специальный хэш служащий ключём при запросе к серверу
+        print "https://" + storage_info["host"] + "/get-mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] + "?track-id=" + str(track_id)
 
         (resp, content) = self.http.request(
-            "https://" + storage_info["host"] + "/get_mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] +
+            "https://" + storage_info["host"] + "/get-mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] +
             "?track-id=" + str(track_id))
 
-        print "https://" + storage_info["host"] + "/get_mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] + "?track-id=" + str(track_id)
         print content
 
     def get_lyrics(self):
@@ -113,11 +113,13 @@ class YandexMusic(object):
         1. Получаем уникальную ссылку для запроса к серверу
         2. Получаем информацию о размещение трека на сервере
         """
+        track = self.get_track(track_id)
         (track_info_resp, track_info_content) = self.http.request(
-            self.api_url + "track/" + str(track_id) + ":129559/download/m?hq=0&external-domain=music.yandex.ru"
-                                                      "&format=json", headers=self.headers)
+            self.api_url + "track/" + str(track_id) + ":" + str(track["track"]["albums"][0]["id"]) +
+            "/download/m?hq=0&external-domain=music.yandex.ru""&format=json", headers=self.headers)
 
         (storage_info_resp, storage_info_content) = self.http.request(
             json.loads(track_info_content)["src"] + "&format=json", headers=self.storage_headers)
 
+        print storage_info_content
         return json.loads(storage_info_content)
