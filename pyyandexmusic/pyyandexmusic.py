@@ -23,21 +23,36 @@ TODO:
 import httplib2
 import json
 import math
+import hashlib
 
 
 class YandexMusic(object):
-
     def __init__(self):
         self.base_url = "https://music.yandex.ru/handlers/"
-        self.api_url = "https://music.yandex.ru/api/v2.0/"
-        self.headers = {"Host": "music.yandex.ru",
-                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0",
-                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                        "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
-                        "Accept-Encoding": "gzip, deflate, br",
-                        "Cookie": open("cookie.txt").read(),  # файл с куками
-                        "Connection": "keep-alive",
-                        "Cache-Control": "max-age=0"}
+        self.api_url = "https://music.yandex.ru/api/v2.0/handlers/"
+        self.headers = {
+            "Host": "music.yandex.ru",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Cookie": open("cookie.txt").read(),  # файл с куками
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0"}
+        # заголовки для обычных запросов к API
+
+        self.storage_headers = {
+            "Host": "storage.mds.yandex.net",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:44.0) Gecko/20100101 Firefox/44.0",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Cookie": open("cookie.txt").read(),  # файл с куками
+            "Connection": "keep-alive",
+            "Cache-Control": "max-age=0"}
+        # заголовки для получения информации
+        # о размещение треков на сервере
+        # (storage.mds.yandex.net)
 
         self.key = "XGRlBW9FXlekgbPrRHuSiA"
         self.http = httplib2.Http(".cache")
@@ -74,8 +89,35 @@ class YandexMusic(object):
     def get_album(self):
         pass
 
-    def get_download_link(self):
-        pass
+    def get_download_link(self, track_id):
+        storage_info = self.__get_storage_info__(track_id)
+        # получим информацию о хранение трека на сервере
+        h = hashlib.md5()
+        h.update(self.key + storage_info["path"] + storage_info["s"])
+        hash = h.hexdigest()
+        # получим специальный хэш служащий ключём при запросе к серверу
+
+        (resp, content) = self.http.request(
+            "https://" + storage_info["host"] + "/get_mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] +
+            "?track-id=" + str(track_id))
+
+        print "https://" + storage_info["host"] + "/get_mp3/" + hash + "/" + storage_info["ts"] + storage_info["path"] + "?track-id=" + str(track_id)
+        print content
 
     def get_lyrics(self):
         pass
+
+    def __get_storage_info__(self, track_id):
+        """
+        Получение информации о хранение трека на сервере
+        1. Получаем уникальную ссылку для запроса к серверу
+        2. Получаем информацию о размещение трека на сервере
+        """
+        (track_info_resp, track_info_content) = self.http.request(
+            self.api_url + "track/" + str(track_id) + ":129559/download/m?hq=0&external-domain=music.yandex.ru"
+                                                      "&format=json", headers=self.headers)
+
+        (storage_info_resp, storage_info_content) = self.http.request(
+            json.loads(track_info_content)["src"] + "&format=json", headers=self.storage_headers)
+
+        return json.loads(storage_info_content)
