@@ -7,4 +7,4 @@
 import pyyandexmusic
 
 ym = pyyandexmusic.YandexMusic()
-ym.get_download_link(3699871)
+ym.get_download_link(565121)
