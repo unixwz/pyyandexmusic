@@ -1,0 +1,18 @@
+status: 200
+content-length: 1706
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=6583177&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=7710672101456662879; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:39 GMT,
+ Session_id=3:1456662879.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.882089.r3RFneZNsJ3Cxc3AeyBsvP8BgUc;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:40 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"6583177","realId":"6583177","title":"Clay, Wood, Bone, Dirt","available":true,"availableForPremiumUsers":true,"durationMs":382040,"storageDir":"16254_39d0feb7.6583177","fileSize":9169605,"normalization":{"gain":0.51,"peak":30885},"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":710316,"title":"Origins","year":1993,"cover":"49707/5dfc7740.a.710316/1.","coverUri":"avatars.yandex.net/get-music-content/5dfc7740.a.710316-1/%%","buy":[],"trackCount":2,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":53977,"name":"Fortuna"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":710316,"title":"Origins","year":1993,"cover":"49707/5dfc7740.a.710316/1.","coverUri":"avatars.yandex.net/get-music-content/5dfc7740.a.710316-1/%%","buy":[],"trackCount":2,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":53977,"name":"Fortuna"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

@@ -1,0 +1,18 @@
+status: 200
+content-length: 1659
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=6583201&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=5688823031456662888; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:48 GMT,
+ Session_id=3:1456662888.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.332818.gisTjyd2hbp6sk00iYYVfvERMo4;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:48 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"6583201","realId":"6583201","title":"The Call","available":true,"availableForPremiumUsers":true,"durationMs":213360,"storageDir":"16234_a8659d8a.6583201","fileSize":5120835,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":710320,"title":"World's Edge","year":1992,"cover":"49876/423de378.a.710320/1.","coverUri":"avatars.yandex.net/get-music-content/423de378.a.710320-1/%%","buy":[],"trackCount":9,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":53977,"name":"Fortuna"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":710320,"title":"World's Edge","year":1992,"cover":"49876/423de378.a.710320/1.","coverUri":"avatars.yandex.net/get-music-content/423de378.a.710320-1/%%","buy":[],"trackCount":9,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":53977,"name":"Fortuna"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

@@ -1,0 +1,18 @@
+status: 200
+content-length: 2496
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=5694971&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=1446223131456662886; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:46 GMT,
+ Session_id=3:1456662886.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.134742.sP2RW4r1B3yJm8SkkdinOAtTe8Q;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:46 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"5694971","realId":"5694971","title":"Gyab Do - Refuge Prayer for all Sentient Beings / Ganden Lhagya - Prayer for Tsongkhapa, the Founder of the Gelugpa Sect","available":true,"availableForPremiumUsers":true,"durationMs":132884,"storageDir":"14971_8cc17521.5694971","fileSize":3188609,"normalization":{"gain":-1.41,"peak":25664},"artists":[{"id":1079283,"name":"Thupten Pema Lama","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"13e8a758.a.624823/1.","uri":"avatars.yandex.net/get-music-content/13e8a758.a.624823-1/%%"}},{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":624823,"title":"Prayers to the Protector","year":2000,"cover":"33216/13e8a758.a.624823/1.","coverUri":"avatars.yandex.net/get-music-content/13e8a758.a.624823-1/%%","buy":[],"trackCount":4,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}},{"id":1079283,"name":"Thupten Pema Lama","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"13e8a758.a.624823/1.","uri":"avatars.yandex.net/get-music-content/13e8a758.a.624823-1/%%"}}],"labels":[{"id":53963,"name":"Celestial Harmonies"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":624823,"title":"Prayers to the Protector","year":2000,"cover":"33216/13e8a758.a.624823/1.","coverUri":"avatars.yandex.net/get-music-content/13e8a758.a.624823-1/%%","buy":[],"trackCount":4,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}},{"id":1079283,"name":"Thupten Pema Lama","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"13e8a758.a.624823/1.","uri":"avatars.yandex.net/get-music-content/13e8a758.a.624823-1/%%"}}],"labels":[{"id":53963,"name":"Celestial Harmonies"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

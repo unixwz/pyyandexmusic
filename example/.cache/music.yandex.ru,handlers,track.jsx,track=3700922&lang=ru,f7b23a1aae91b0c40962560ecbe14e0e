@@ -1,0 +1,18 @@
+status: 200
+content-length: 2790
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=3700922&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=7040886851456662886; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:46 GMT,
+ Session_id=3:1456662886.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.761399.gP5TqkTENEoiRneLPX0m3Z1wEks;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:46 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"3700922","realId":"3700922","title":"Realm of Refraction","available":true,"availableForPremiumUsers":true,"durationMs":679065,"storageDir":"9887_b4a4c50c.3700922","fileSize":16311692,"normalization":{"gain":-4.22,"peak":32766},"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":414071,"title":"Light Fantastic","year":1999,"cover":"33216/da6d0160.a.414071/1.","coverUri":"avatars.yandex.net/get-music-content/da6d0160.a.414071-1/%%","genre":"newage","buy":[],"trackCount":6,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":414071,"title":"Light Fantastic","year":1999,"cover":"33216/da6d0160.a.414071/1.","coverUri":"avatars.yandex.net/get-music-content/da6d0160.a.414071-1/%%","genre":"newage","buy":[],"trackCount":6,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[{"id":"3723062","realId":"3723062","title":"Realm of Refraction","available":true,"availableForPremiumUsers":true,"durationMs":327475,"storageDir":"10343_6ca9de4c.3723062","fileSize":7866826,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":417674,"title":"Slow Music for Fast Times","year":2001,"cover":"32236/c7201524.a.417674/1.","coverUri":"avatars.yandex.net/get-music-content/c7201524.a.417674-1/%%","genre":"newage","buy":[],"trackCount":27,"recent":false,"veryImportant":false,"artists":[{"id":171,"name":"сборник","various":true,"composer":false,"cover":{"type":"from-album-cover","prefix":"b35bc878.a.3128191/4.","uri":"avatars.yandex.net/get-music-content/b35bc878.a.3128191-4/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false}]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

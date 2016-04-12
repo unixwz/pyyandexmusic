@@ -1,0 +1,18 @@
+status: 200
+content-length: 1772
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=3699871&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=8902151341456662892; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:52 GMT,
+ Session_id=3:1456662892.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.217633.WDhocWpQBM88MRLEpZxpxxmFk6s;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:52 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"3699871","realId":"3699871","title":"On This Planet","available":true,"availableForPremiumUsers":true,"durationMs":844902,"storageDir":"15612_2771250a.3699871","fileSize":20295261,"normalization":{"gain":-1.93,"peak":31057},"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":413988,"title":"On This Planet","year":1997,"cover":"42108/d51cfded.a.413988/1.","coverUri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%","genre":"relax","buy":[],"trackCount":10,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":413988,"title":"On This Planet","year":1997,"cover":"42108/d51cfded.a.413988/1.","coverUri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%","genre":"relax","buy":[],"trackCount":10,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

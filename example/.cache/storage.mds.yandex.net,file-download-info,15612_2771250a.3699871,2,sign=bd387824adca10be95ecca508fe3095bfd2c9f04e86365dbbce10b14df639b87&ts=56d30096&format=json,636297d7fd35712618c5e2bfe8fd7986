@@ -1,0 +1,17 @@
+status: 200
+content-length: 205
+content-location: https://storage.mds.yandex.net/file-download-info/15612_2771250a.3699871/2?sign=bd387824adca10be95ecca508fe3095bfd2c9f04e86365dbbce10b14df639b87&ts=56d30096&format=json
+keep-alive: timeout=60
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 14:12:42 GMT
+access-control-allow-origin: *
+content-type: application/json
+
+{
+    "host": "s88h.storage.yandex.net",
+    "path": "/music/38/1/data-0.3:44709012269:20295261",
+    "s": "63595044678ee7dd196e990c7078e2945656940d473d64728547f9f4b9f84048",
+    "ts": "00052cd5f6bc073e"
+}

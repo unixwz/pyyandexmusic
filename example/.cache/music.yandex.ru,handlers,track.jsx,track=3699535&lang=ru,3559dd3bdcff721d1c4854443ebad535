@@ -1,0 +1,18 @@
+status: 200
+content-length: 2764
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=3699535&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=3565227351456662890; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:50 GMT,
+ Session_id=3:1456662890.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.872455.8o86Kzn-kEyc1GOnB8lnhvz-07g;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:50 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"3699535","realId":"3699535","title":"Melting World","available":true,"availableForPremiumUsers":true,"durationMs":490342,"storageDir":"11922_0254b331.3699535","fileSize":11778297,"artists":[{"id":124400,"name":"Jorge Reyes","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"829b5e7d.a.1565120/1.","uri":"avatars.yandex.net/get-music-content/829b5e7d.a.1565120-1/%%"}},{"id":164737,"name":"SUSO SAIZ","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"bdd489aa.a.354157/1.","uri":"avatars.yandex.net/get-music-content/bdd489aa.a.354157-1/%%"}},{"id":674579,"name":"Suspended Memories","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"acb56a08.a.413958/1.","uri":"avatars.yandex.net/get-music-content/acb56a08.a.413958-1/%%"}},{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}}],"albums":[{"id":413957,"title":"Earth Island","year":1994,"cover":"33216/5eb74cab.a.413957/1.","coverUri":"avatars.yandex.net/get-music-content/5eb74cab.a.413957-1/%%","genre":"newage","buy":[],"trackCount":8,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}},{"id":674579,"name":"Suspended Memories","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"acb56a08.a.413958/1.","uri":"avatars.yandex.net/get-music-content/acb56a08.a.413958-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":413957,"title":"Earth Island","year":1994,"cover":"33216/5eb74cab.a.413957/1.","coverUri":"avatars.yandex.net/get-music-content/5eb74cab.a.413957-1/%%","genre":"newage","buy":[],"trackCount":8,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"d51cfded.a.413988/1.","uri":"avatars.yandex.net/get-music-content/d51cfded.a.413988-1/%%"}},{"id":674579,"name":"Suspended Memories","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"acb56a08.a.413958/1.","uri":"avatars.yandex.net/get-music-content/acb56a08.a.413958-1/%%"}}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

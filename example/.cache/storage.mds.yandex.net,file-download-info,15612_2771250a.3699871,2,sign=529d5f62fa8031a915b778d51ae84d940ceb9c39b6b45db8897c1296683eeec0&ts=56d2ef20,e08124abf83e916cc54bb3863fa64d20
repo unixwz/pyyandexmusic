@@ -1,0 +1,11 @@
+status: 200
+content-length: 273
+content-location: https://storage.mds.yandex.net/file-download-info/15612_2771250a.3699871/2?sign=529d5f62fa8031a915b778d51ae84d940ceb9c39b6b45db8897c1296683eeec0&ts=56d2ef20
+keep-alive: timeout=60
+server: nginx
+connection: keep-alive
+date: Sun, 28 Feb 2016 12:58:12 GMT
+access-control-allow-origin: *
+content-type: text/xml
+
+<?xml version="1.0" encoding="utf-8"?><download-info><host>s13f.storage.yandex.net</host><path>/music/6/2/data-0.4:44591805410:20295261</path><ts>00052cd4ec4df756</ts><region>-1</region><s>e7b4d14e295845725967ffc57df7c98a495280cdd4010369cf9b110133cdbc6c</s></download-info>

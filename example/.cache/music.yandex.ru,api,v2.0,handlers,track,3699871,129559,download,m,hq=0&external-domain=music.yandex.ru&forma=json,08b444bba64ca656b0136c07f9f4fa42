@@ -1,0 +1,19 @@
+status: 200
+content-length: 207
+x-compat: 5
+content-disposition: attachment; filename=json.txt
+x-content-type-options: nosniff
+set-cookie: yandexuid=1414870701456666159; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 13:29:19 GMT,
+ Session_id=3:1456666159.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142016.94577.yzPhKmVu38szAUabdAIwSfn2a5U;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 13:29:19 GMT
+content-type: application/json; charset=utf-8
+content-location: https://music.yandex.ru/api/v2.0/handlers/track/3699871:129559/download/m?hq=0&external-domain=music.yandex.ru&forma=json
+
+{"codec":"mp3","bitrate":192,"src":"https://storage.mds.yandex.net/file-download-info/15612_2771250a.3699871/2?sign=73e287298f891adc3486bf8d1d5b199cbe130a2324a416d64c8f142323129db4&ts=56d2f66b","gain":false}

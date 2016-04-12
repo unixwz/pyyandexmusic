@@ -1,0 +1,16 @@
+status: 200
+content-length: 1829
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=26913406&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=9932061471456673555; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 15:32:35 GMT
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 15:32:35 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"26913406","realId":"26913406","title":"Evoked by Light","available":true,"availableForPremiumUsers":true,"durationMs":334870,"storageDir":"21360_63b6d61a.26913406","fileSize":8037982,"normalization":{"gain":-8.35,"peak":32392},"artists":[{"id":1202247,"name":"Vinterblot","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"402076c4.a.721901/1.","uri":"avatars.yandex.net/get-music-content/402076c4.a.721901-1/%%"}}],"albums":[{"id":3210869,"title":"Realms of the Untold","year":2016,"cover":"49876/43f5f86e.a.3210869/1.","coverUri":"avatars.yandex.net/get-music-content/43f5f86e.a.3210869-1/%%","genre":"metal","buy":[],"trackCount":9,"recent":false,"veryImportant":false,"artists":[{"id":1202247,"name":"Vinterblot","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"402076c4.a.721901/1.","uri":"avatars.yandex.net/get-music-content/402076c4.a.721901-1/%%"}}],"labels":[{"id":454532,"name":"Nemeton"},{"id":21088,"name":"Halidon"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":3210869,"title":"Realms of the Untold","year":2016,"cover":"49876/43f5f86e.a.3210869/1.","coverUri":"avatars.yandex.net/get-music-content/43f5f86e.a.3210869-1/%%","genre":"metal","buy":[],"trackCount":9,"recent":false,"veryImportant":false,"artists":[{"id":1202247,"name":"Vinterblot","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"402076c4.a.721901/1.","uri":"avatars.yandex.net/get-music-content/402076c4.a.721901-1/%%"}}],"labels":[{"id":454532,"name":"Nemeton"},{"id":21088,"name":"Halidon"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}

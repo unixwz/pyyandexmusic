@@ -1,0 +1,18 @@
+status: 200
+content-length: 1980
+x-compat: 5
+content-location: https://music.yandex.ru/handlers/track.jsx?track=3700740&lang=ru
+x-content-type-options: nosniff
+set-cookie: yandexuid=2625774161456662883; domain=.yandex.ru; path=/;
+ expires=Sat, 28 Feb 2026 12:34:43 GMT,
+ Session_id=3:1456662883.5.1.1455642491745:rVpTXw:16.0|324282133.0.2|1130000019921199.47.2.2:47|364239159.83587.2.2:83587|142014.510700.uDlMXO0Et02o9GKo8ToTbIBOeZE;
+ domain=.yandex.ru; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT; HttpOnly
+strict-transport-security: max-age=31536000
+keep-alive: timeout=120
+server: nginx
+connection: keep-alive
+-content-encoding: gzip
+date: Sun, 28 Feb 2016 12:34:43 GMT
+content-type: application/json; charset=utf-8
+
+{"track":{"id":"3700740","realId":"3700740","title":"Forever","available":true,"availableForPremiumUsers":true,"durationMs":291276,"storageDir":"12067_e580107a.3700740","fileSize":6996635,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"cc9a9139.a.414054/1.","uri":"avatars.yandex.net/get-music-content/cc9a9139.a.414054-1/%%"},"decomposed":[", ",{"id":435677,"name":"Robert Rich","various":false,"composer":false}]}],"albums":[{"id":414054,"title":"Strata","year":1990,"cover":"49876/cc9a9139.a.414054/1.","coverUri":"avatars.yandex.net/get-music-content/cc9a9139.a.414054-1/%%","genre":"electronics","buy":[],"trackCount":10,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"cc9a9139.a.414054/1.","uri":"avatars.yandex.net/get-music-content/cc9a9139.a.414054-1/%%"},"decomposed":[", ",{"id":435677,"name":"Robert Rich","various":false,"composer":false}]}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"lyricsAvailable":false},"similarTracks":[],"alsoInAlbums":[{"id":414054,"title":"Strata","year":1990,"cover":"49876/cc9a9139.a.414054/1.","coverUri":"avatars.yandex.net/get-music-content/cc9a9139.a.414054-1/%%","genre":"electronics","buy":[],"trackCount":10,"recent":false,"veryImportant":false,"artists":[{"id":224206,"name":"Steve Roach","various":false,"composer":false,"cover":{"type":"from-album-cover","prefix":"cc9a9139.a.414054/1.","uri":"avatars.yandex.net/get-music-content/cc9a9139.a.414054-1/%%"},"decomposed":[", ",{"id":435677,"name":"Robert Rich","various":false,"composer":false}]}],"labels":[{"id":1402,"name":"Valley Entertainment"}],"available":true,"availableForPremiumUsers":true}],"otherVersions":{"remix":[],"live":[],"instrumental":[],"another":[]},"aliases":[],"lyric":[],"video":[],"radioIsAvailable":false}
